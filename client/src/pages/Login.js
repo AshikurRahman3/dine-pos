@@ -36,7 +36,7 @@ const Login = () => {
   return (
     <div style={styles.page}>
       <div style={styles.card}>
-        <h1 style={styles.title}>POS APP</h1>
+        <h1 style={styles.title}>POS</h1>
         <h3 style={styles.subtitle}>Login Page</h3>
         <Form layout="vertical" onFinish={handleSubmit} style={{ width: "100%" }}>
           <Form.Item
