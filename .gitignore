@@ -1,0 +1,9 @@
+# Ignore environment files
+backend/.env
+
+# Optional: Node modules
+**/node_modules
+
+# Optional: build outputs
+**/dist
+**/build

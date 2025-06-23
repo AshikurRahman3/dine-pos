@@ -1,0 +1,270 @@
+/* Root layout with light background */
+.default-layout {
+  height: 100vh;
+  background: #f9fbfd;
+  /* very light blue/gray */
+  font-family: "Sora", sans-serif;
+  color: #222;
+  overflow: hidden;
+}
+
+/* Light neon sidebar with glowing pastel edges */
+.neon-sider {
+  background: #ffffff;
+  box-shadow:
+    0 0 15px rgba(0, 183, 217, 0.3),
+    inset 0 0 20px rgba(0, 183, 217, 0.15),
+    inset 0 0 40px rgba(0, 183, 217, 0.08);
+  border-radius: 24px 0 0 24px;
+  padding-top: 30px !important;
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border-left: 3px solid #00b7d9;
+  border-top: 3px solid #00b7d9;
+  border-bottom: 3px solid #00b7d9;
+}
+
+/* Bright glowing logo */
+.logo {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  user-select: none;
+  color: #0099cc;
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: 6px;
+  text-shadow:
+    0 0 4px #00aaff,
+    0 0 10px #33bbff;
+  font-family: "Sora", sans-serif;
+}
+
+
+/* Menu background transparent with subtle glow on items */
+.custom-menu {
+  background: transparent;
+  border-right: none;
+}
+
+.custom-menu .ant-menu-item {
+  border-radius: 14px;
+  margin: 10px 14px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #006699 !important;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 0 6px rgba(0, 119, 179, 0.3);
+}
+
+.custom-menu .ant-menu-item:hover {
+  color: #00aaff !important;
+  background: rgba(0, 183, 217, 0.12);
+  box-shadow:
+    0 0 15px #00aaff,
+    0 0 20px rgba(0, 183, 217, 0.4);
+  transform: translateX(6px);
+}
+
+.custom-menu .ant-menu-item-selected {
+  background: linear-gradient(135deg, #00b7d9, #0099cc);
+  color: white !important;
+  box-shadow:
+    0 0 20px #00b7d9,
+    0 0 30px #007799;
+  font-weight: 900;
+  transform: scale(1.05);
+}
+
+/* Menu icons */
+.custom-menu .anticon {
+  font-size: 20px;
+  margin-right: 16px;
+  color: #007799 !important;
+  transition: color 0.3s ease;
+}
+
+.custom-menu .ant-menu-item:hover .anticon,
+.custom-menu .ant-menu-item-selected .anticon {
+  color: #00aaff !important;
+}
+
+/* Header with light gradient and subtle glow */
+.neon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: linear-gradient(90deg, #e6f0f8, #cce7f9);
+  box-shadow:
+    0 0 20px rgba(0, 183, 217, 0.3);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  user-select: none;
+  position: relative;
+  z-index: 10;
+  color: #004466;
+}
+
+/* Sidebar toggle button */
+.neon-trigger-btn {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0099cc;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 14px;
+  box-shadow:
+    0 0 10px rgba(0, 183, 217, 0.3),
+    inset 0 0 6px rgba(0, 119, 179, 0.15);
+  transition: all 0.3s ease;
+}
+
+.neon-trigger-btn:hover,
+.neon-trigger-btn:focus-visible {
+  color: #00aaff;
+  box-shadow:
+    0 0 20px #00aaff,
+    inset 0 0 12px rgba(0, 119, 179, 0.3);
+  outline: none;
+  transform: scale(1.1);
+}
+
+.neon-trigger-btn:active {
+  transform: scale(0.95);
+}
+
+/* Cart item with glowing badge */
+.neon-cart {
+  position: relative;
+  cursor: pointer;
+  color: #0099cc;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  user-select: none;
+  padding: 8px 12px;
+  border-radius: 14px;
+  box-shadow:
+    0 0 15px rgba(0, 167, 225, 0.3),
+    inset 0 0 10px rgba(0, 119, 179, 0.2);
+}
+
+.neon-cart:hover,
+.neon-cart:focus-visible {
+  color: #00aaff;
+  box-shadow:
+    0 0 25px #00aaff,
+    inset 0 0 20px rgba(0, 119, 179, 0.3);
+  outline: none;
+  transform: scale(1.1);
+}
+
+/* Badge overrides */
+.ant-badge-count {
+  background: #00aaff !important;
+  color: #00334d !important;
+  font-weight: 900 !important;
+  font-size: 14px !important;
+  box-shadow:
+    0 0 12px #00aaff !important;
+  border: none !important;
+  transform: scale(1.15);
+  transition: all 0.3s ease !important;
+  user-select: none;
+}
+
+/* Content area with subtle light card */
+.content-area {
+  margin: 24px 16px;
+  padding: 32px;
+  background: white;
+  border-radius: 28px;
+  box-shadow:
+    0 6px 20px rgba(0, 183, 217, 0.12);
+  color: #004466;
+  min-height: 280px;
+  overflow-y: auto;
+  user-select: text;
+}
+
+/* Scrollbar for content */
+.content-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-area::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.content-area::-webkit-scrollbar-thumb {
+  background: #00aaff;
+  border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .neon-sider {
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    border-radius: 0 24px 24px 0;
+    width: 220px !important;
+  }
+
+  .site-layout {
+    margin-left: 0 !important;
+  }
+}
+
+
+
+
+/* Fix sidebar logo container to be full width with no left padding/margin */
+.logo {
+  height: 70px;
+  width: 100%;
+  /* full width */
+  padding-left: 0 !important;
+  /* remove left padding */
+  margin-left: 0 !important;
+  /* remove left margin */
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  align-items: center;
+  /* center vertically */
+  margin-bottom: 40px;
+  user-select: none;
+  color: #0099cc;
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: 6px;
+  text-shadow:
+    0 0 4px #00aaff,
+    0 0 10px #33bbff;
+  font-family: "Sora", sans-serif;
+}
+
+/* Remove margin on the h1 inside logo */
+.logo-text {
+  margin: 0 !important;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.logo {
+  background-image: none !important;
+}

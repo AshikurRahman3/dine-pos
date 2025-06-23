@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.item-button button {
+  margin-top: 20px;
+  width: 200px;
+  background-color: rgb(34, 78, 9);
+  color: white;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.spinner-border {
+  height: 100px;
+  width: 100px;
+}
+
+.category {
+  border: 2px solid gray;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.category img {
+  margin-left: 10px;
+}
+
+.category-active {
+  border: 2px solid green;
+  background-color: rgba(128, 128, 128, 0.501);
+}
+
+/* ========= register page ================ */
+
+.register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register input {
+  width: 400px !important;
+}
+
+.regsiter-form {
+  background-color: rgba(98, 197, 251, 0.463);
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.regsiter-form h1 {
+  text-align: center;
+  background-color: rgb(2, 2, 75);
+  color: white;
+  padding: 10px;
+}
+
+.regsiter-form h3 {
+  color: rgb(4, 4, 113);
+  text-align: center;
+}
+
+/* Container and layout */
+.homepage-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Categories container */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Category buttons - super modern style */
+.category-card {
+  background: #f0f0f3;
+  border-radius: 50px;
+  /* big rounded pill shape */
+  padding: 1rem 2rem;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #555;
+  box-shadow:
+    8px 8px 15px #bebebe,
+    /* dark shadow */
+    -8px -8px 15px #ffffff;
+  /* light shadow (neumorphism) */
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  position: relative;
+  outline-offset: 5px;
+  border: none;
+}
+
+.category-card:hover {
+  color: #2e7d32;
+  transform: scale(1.05);
+  box-shadow:
+    12px 12px 24px #bebebe,
+    -12px -12px 24px #ffffff;
+}
+
+.category-card:active {
+  animation: bounce 0.25s ease forwards;
+}
+
+/* Bounce scale animation on click */
+@keyframes bounce {
+  0% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+/* Active category with gradient background and glow */
+.category-card.active {
+  color: white;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  box-shadow:
+    0 0 10px 3px rgba(46, 125, 50, 0.7),
+    inset 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Focus visible outline for keyboard navigation */
+.category-card:focus-visible {
+  outline: 3px solid #4caf50;
+  outline-offset: 5px;
+}
+
+/* Category icon */
+.category-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  /* circular icons */
+  transition: transform 0.35s ease;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* Slight icon zoom on hover */
+.category-card:hover .category-icon {
+  transform: scale(1.15);
+}
+
+/* Items grid spacing */
+.items-grid {
+  margin-top: 1rem;
+}
+
+/* Spinner container */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+
+@media print {
+  #invoice-POS {
+    width: 100% !important;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: white !important;
+    font-size: 11px !important;
+    /* smaller font */
+    line-height: 1.1 !important;
+    /* tighter line height */
+    color: #000 !important;
+  }
+
+  #invoice-POS h2 {
+    font-size: 14px !important;
+    margin: 0.2em 0 !important;
+  }
+
+  #invoice-POS p {
+    font-size: 11px !important;
+    margin: 0.1em 0 !important;
+  }
+
+  #invoice-POS table {
+    width: 100% !important;
+    border-collapse: collapse;
+    font-size: 11px !important;
+  }
+
+  #invoice-POS table td,
+  #invoice-POS table th {
+    border: 1px solid #ddd !important;
+    padding: 4px 6px !important;
+    /* less padding */
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #invoice-POS,
+  #invoice-POS * {
+    visibility: visible;
+  }
+
+  #invoice-POS {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
