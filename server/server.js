@@ -20,6 +20,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
+
 //routes
 app.use("/api/items", require("./routes/itemRoutes"));
 app.use("/api/users", require("./routes/userRoutes"));
