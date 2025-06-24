@@ -14,7 +14,7 @@ const ItemPage = () => {
       dispatch({
         type: "SHOW_LOADING",
       });
-      const { data } = await axios.get("/api/items/get-item");
+      const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/api/items/get-item`);
       setItemsData(data);
       dispatch({ type: "HIDE_LOADING" });
       console.log(data);
@@ -35,7 +35,7 @@ const ItemPage = () => {
       dispatch({
         type: "SHOW_LOADING",
       });
-      await axios.post("/api/items/delete-item", { itemId: record._id });
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/items/delete-item`, { itemId: record._id });
       message.success("Item Deleted Succesfully");
       getAllItems();
       setPopupModal(false);
@@ -89,7 +89,7 @@ const ItemPage = () => {
         dispatch({
           type: "SHOW_LOADING",
         });
-        const res = await axios.post("/api/items/add-item", value);
+        const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/items/add-item`, value);
         message.success("Item Added Succesfully");
         getAllItems();
         setPopupModal(false);
@@ -104,7 +104,7 @@ const ItemPage = () => {
         dispatch({
           type: "SHOW_LOADING",
         });
-        await axios.put("/api/items/edit-item", {
+        await axios.put(`${process.env.REACT_APP_API_URL}/api/items/edit-item`, {
           ...value,
           itemId: editItem._id,
         });

@@ -31,7 +31,7 @@ const Homepage = () => {
     const fetchItems = async () => {
       dispatch({ type: "SHOW_LOADING" });
       try {
-        const { data } = await axios.get("/api/items/get-item");
+        const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/api/items/get-item`);
         setItemsData(data);
       } catch (err) {
         console.error(err);
