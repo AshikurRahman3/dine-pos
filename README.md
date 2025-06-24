@@ -23,7 +23,7 @@ Check out the live website here: [https://dine-pos.vercel.app](https://dine-pos.
 Its deployed in vercel (frontend) and render (backend).
 
 ##  Demo Video
-[![Demo Preview](./images/pos_medium.gif)](./images/pos_large.gif)  
+[![Demo Preview](./images/pos_medium2.gif)](./images/pos_large2.gif)  
 *Click on the image to view it in a larger size.*
 
 ---
@@ -32,7 +32,7 @@ Its deployed in vercel (frontend) and render (backend).
 
 | Home Screen | Cart Page | Customer List |
 |-------------|------------|---------------|
-| ![Home Screen](images/home.png) | ![Cart Page](images/cart.png) | ![Customer List](images/customer.png) |
+| ![Home Screen](images/home.png) | ![Cart Page](images/cart.png) | ![Customer List](images/customers.png) |
 
 | Bill Generation | Item Management | Login Page |
 |-----------------|-----------------|------------|
@@ -41,7 +41,7 @@ Its deployed in vercel (frontend) and render (backend).
 
 | Register | Print_preview | Printed |
 |-----------------|-----------------|------------|
-| ![Register](images/register.png) | ![Print_preview](images/print_start.png) | ![Printed](images/printed.png) |
+| ![Register](images/register.png) | ![Print_preview](images/print_preview.png) | ![Printed](images/print.png) |
 
 ---
 
