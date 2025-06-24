@@ -4,7 +4,7 @@ Dine POS Application is a  Mern full-stack Point of Sale system built with Mongo
 
 ## Table of Contents
 
-1. [Live Website](#live-website)  
+1. [Live](#live)  
 2. [Demo Video](#demo-video) 
 3. [Screenshots](#screenshots)  
 4. [Features](#features)  
@@ -16,7 +16,7 @@ Dine POS Application is a  Mern full-stack Point of Sale system built with Mongo
 
 ---
 
-## Live  Website
+## Live
 
 Check out the live demo here: [https://dine-pos.vercel.app](https://dine-pos.vercel.app)
 
