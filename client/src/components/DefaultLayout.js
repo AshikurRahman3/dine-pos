@@ -39,7 +39,7 @@ const DefaultLayout = ({ children }) => {
         className="neon-sider"
       >
         <div className="logo" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <h1 className="logo-text" style={{ margin: 0 }}>POS</h1>
+          <h1 className="logo-text" style={{ margin: 0 }}>Dine POS</h1>
         </div>
 
         <Menu
