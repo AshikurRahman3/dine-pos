@@ -4,19 +4,44 @@ Dine POS Application is a  Mern full-stack Point of Sale system built with Mongo
 
 ## Table of Contents
 
-1. [Demo](#demo)  
-2. [Features](#features)  
+1. [Live](#live)  
+2. [Demo Video](#demo-video) 
 3. [Screenshots](#screenshots)  
-4. [Technologies Used](#technologies-used)  
-5. [Usage](#usage)  
-6. [Installation](#installation)  
-7. [Environment Setup](#environment-setup)
+4. [Features](#features)  
+5. [Technologies Used](#technologies-used)  
+6. [Usage](#usage)  
+7. [Installation](#installation)  
+8. [Running the Project Locally](#running-the-project-locally)
+
 
 ---
 
-## Demo
+## Live  Website
 
 Check out the live demo here: [https://dine-pos.vercel.app](https://dine-pos.vercel.app)
+
+##  Demo Video
+[![Demo Preview](./images/pos_medium.gif)](./images/pos_large.gif)  
+*Click on the image to view it in a larger size.*
+
+---
+
+## Screenshots
+
+| Home Screen | Cart Page | Customer List |
+|-------------|------------|---------------|
+| ![Home Screen](images/home.png) | ![Cart Page](images/cart.png) | ![Customer List](images/customer.png) |
+
+| Bill Generation | Item Management | Login Page |
+|-----------------|-----------------|------------|
+| ![Bill Generation](images/generate_bill.png) | ![Item Management](images/items.png) | ![Login Page](images/login.png) |
+
+
+| Register | Print_preview | Printed |
+|-----------------|-----------------|------------|
+| ![Register](images/register.png) | ![Print_preview](images/print_start.png) | ![Printed](images/printed.png) |
+
+---
 
 ## Features
 
@@ -29,17 +54,7 @@ Check out the live demo here: [https://dine-pos.vercel.app](https://dine-pos.ver
 
 ---
 
-## Screenshots
 
-| Home Screen | Cart Page | Customer List |
-|-------------|------------|---------------|
-| ![Home Screen](images/home_screen.png) | ![Cart Page](images/cart_page.png) | ![Customer List](images/customers.png) |
-
-| Bill Generation | Item Management | Login Page |
-|-----------------|-----------------|------------|
-| ![Bill Generation](images/bill_generation.png) | ![Item Management](images/items.png) | ![Login Page](images/login.png) |
-
----
 
 ## Technologies Used
 
@@ -102,7 +117,7 @@ Create a .env file inside the client folder with variables
 REACT_APP_API_URL=http://localhost:8080
 
 ```
-## 🚀 Running the Project Locally
+## Running the Project Locally
 
 1. **Start the server**  
 ```
